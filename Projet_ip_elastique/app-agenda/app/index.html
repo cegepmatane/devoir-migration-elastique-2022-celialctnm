@@ -9,7 +9,6 @@
   <script src="VueAgenda.js"></script>
   <script src="VueListeAgenda.js"></script>
   <script src="VueAjouterAgenda.js"></script>
-  <script src="VueModifierAgenda.js"></script>
   <!--
   https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#Script_loading_strategies
   Scripts loaded using the defer attribute will run in the order they appear
@@ -22,7 +21,6 @@
   <div id="page-chargement-application">Chargement de l'application agenda</div>
 
 
-  <input type="hidden" id="agenda-id"/>
   <script type="plain/text" id="html-vue-liste-agenda">
   <div class="page">
     <h1>Liste des devoirs </h1>
@@ -31,7 +29,6 @@
       <li>
         <img src="decoration/illustration/task-image.png" width="50" height="50">
         <a href="#agenda/{Agenda.id}" class="liste-agenda-item">{Agenda.matiere}</a>
-        <a id="modifier" href="#modifier-agenda/{Agenda.id}" class="liste-agenda-item">Modifier</a>
       </li>
     </ul>
   </div>
@@ -56,42 +53,6 @@
   <div class="page">
     <h1>Ajouter un devoir</h1>
     <form id="formulaire-ajouter">
-      <fieldset>
-        <legend>Identification du devoir</legend>
-        <div>
-          <label for="agenda-matiere">Matiere</label>
-          <input type="text" id="agenda-matiere"/>
-        </div>
-        <div>
-          <label for="agenda-type">Type (devoirs, examens)</label>
-          <input type="text" id="agenda-type"/>
-        </div>
-        <div>
-          <label for="agenda-date">Date de rendu</label>
-          <textarea id="agenda-date"></textarea>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>D&eacute;tails</legend>
-        <div>
-          <label for="agenda-description">Description</label>
-          <textarea id="agenda-description"></textarea>
-        </div>
-        <div>
-          <label for="agenda-duree">Duree</label>
-          <textarea id="agenda-duree"></textarea>
-        </div>
-      </fieldset>
-      <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
-    </form>
-    <a href="#" class="action">Annuler et revenir &agrave; la liste</a>
-  </div>
-  </script>
-
-  <script type="plain/text" id="html-vue-modifier-agenda">
-  <div class="page">
-    <h1>Modifier un devoir</h1>
-    <form id="formulaire-modifier">
       <fieldset>
         <legend>Identification du devoir</legend>
         <div>

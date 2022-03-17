@@ -6,16 +6,6 @@
   src: url(font/Roboto/Roboto-Regular.ttf);
 }
 
-#modifier {
-  color: black;
-  background-color: #95FF93;
-  border-radius: 10px;
-  border: 2px #95FF93 solid;
-  font-size: 28px;
-  padding: 3px;
-  text-align: right;
-}
-
 :root {
   --theme-rouge: #000000;
   --theme-blanc-transparent: rgb(182, 156, 255);
